@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Web Application</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+    <!--Favicon icon-->
+    <link rel="icon" href="img/cv.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+<div class="logo"><h1>@ABHAY</h1></div>
+               
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>
+                   Hi, I'm <span>Abhay</span> <br />
+                    From India.
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/background.png" alt="img">
+                
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        As a web developer based in India, I passionately craft digital experiences,
+                         seamlessly blending creativity and functionality. With a keen eye for detail,
+                          I specialize in building responsive and user-friendly websites, leveraging cutting-edge technologies to bring
+                           ideas to life and contribute to the ever-evolving landscape of the web..</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>Problem Solving In DSA</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>Flutter</span><br>Flutter Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <p>
+                                As a motivated and ambitious third-year college student with a strong foundation in web development, I am eager to embark on a professional journey. While lacking direct industry experience, my academic pursuits and hands-on projects have equipped me with solid skills in HTML, CSS, JavaScript, and React. A quick learner with a passion for innovative solutions, I am poised to contribute and grow in a dynamic work environment.
+                            </p>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>High-school(10th) From Azad Hind Inter college</li>
+                            <li><span>2021</span><br>12th from Azad Hind Inter college</li>
+                            <li><span>2025</span><br>B.tech From GLA University Mathura</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Passionate web developer proficient in React, Node.js, HTML, CSS, and JavaScript. Leveraging the power of React for dynamic and responsive user interfaces, coupled with Node.js for scalable back-end solutions. Excels in crafting seamless web experiences with a keen eye for design and functionality. Committed to pushing the boundaries of innovation in web development.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java / DSA</h2>
+                    <p>Possess foundational expertise in Java, showcasing proficiency in object-oriented programming. Solid understanding of Data Structures and Algorithms, applying logical problem-solving skills. Continuously enhance knowledge through coursework and independent projects. Eager to leverage programming skills in a dynamic and collaborative software development environment.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Flutter Development</h2>
+                    <p>Proficient Flutter developer adept at crafting cross-platform mobile applications. Demonstrated expertise in Dart programming language and Flutter framework. Skilled in creating engaging and responsive user interfaces. Committed to delivering high-quality mobile experiences through innovative design and efficient coding practices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects section -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="img/Pi7_Tool_todu1-removebg-preview.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Todu Applicstion.</h3>
+                        <p>Developed a robust Todo web application using HTML, CSS, and JavaScript, with dynamic features powered by React. Implemented responsive design for seamless user experience across devices. Employed state management to enhance task handling and collaborated on enhancing the application's functionality and user interface.</p>
+                        <a href="https://github.com/abhaydubey200/React-Todo"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/Pi7_Tool_weather-removebg-preview.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Weather Application.</h3>
+                        <p>Developed a Weather Report web application using HTML, CSS, and JavaScript. Utilized a weather API to dynamically fetch and display real-time weather data. Implemented responsive design for seamless user experience across devices. Showcased skills in front-end development and API integration, enhancing user accessibility to weather information.</p>
+                        <a href="https://github.com/dubeyabhay2003/Ikigai-lab-end-sem-exam"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/ecommers.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Online Shopping Web.</h3>
+                        <p>Developed a dynamic e-commerce website employing HTML, CSS, and JavaScript for seamless user interactions. Implemented backend functionality using Node.js and Express, ensuring secure transactions. Integrated a MongoDB database for efficient data management. Employed responsive design principles, optimizing the shopping experience across various devices.</p>
+                        <a href="https://github.com/abhaydubey200/React_Routing"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn" onclick="redirectToAbout()">Show more</button>
+
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>dubeyabhay430@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+91-7505-991-639</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/premnarayan.dubey.560/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mr.cyber2004/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/abhaydubey200"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/abhay-32602024b/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/resume.pdf" class="btn btn2" download>Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Mr.cyber. Made with <i class="fa-solid fa-hand-middle-finger"></i> by <a href="#">Mr.cyber2004</a></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+
+
+
+
+        function redirectToAbout() {
+        window.location.href = "#about";
+    }
+
+    </script>
+</body>
+
+</html>
